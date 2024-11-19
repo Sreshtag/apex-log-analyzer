@@ -322,6 +322,10 @@ public class UtilityMethods {
             flowUtility.actionDetail(line);
             break;
           }
+          else if (utilityVariables.currentLineEvent == 'FLOW_ELEMENT_FAULT') {
+            flowUtility.isError(line);
+            break;
+          }
         }
       }
     } else {
